@@ -1,0 +1,119 @@
+<!doctype html><html><head> 
+  <style type="text/css">
+      #d1 {
+        background-color:silver;
+        height:600px;
+        width:500px;
+        margin-left:200px;
+        border:5px solid powderblue;
+     }
+     
+     
+    .dis {
+        height:100px;
+        width:470px;
+        margin-left:2.5px;
+        margin-top:3px;
+        font-size:89px;
+     }
+      
+      #d2 {
+        background-color:gray;
+        height:110px;
+        width:480px;
+        margin-left:8px;
+        margin-top:10px;
+        border:2px solid powderblue;
+      }  
+      
+      #d3 {
+        background-color:gray;
+        height:450px;
+        width:340px;
+        margin-left:8px;
+        margin-top:10px;
+        border:2px solid powderblue;
+        float:left;
+      } 
+      
+      #d4 {
+        background-color:gray;
+        height:450px;
+        width:130px;
+        margin-left:6px;
+        margin-top:10px;
+        border:2px solid powderblue;
+        float:left;
+      } 
+      
+      .Ckey1 {
+        background-color:crimson;
+        height:100px;
+        width:100px;
+        margin-left:10px;
+        margin-top:10px;
+        border:5px solid powderblue;
+        font-size:89px;
+        float:left;
+        
+      } 
+      
+      .Ckey2 {
+        background-color:crimson;
+        height:100px;
+        width:100px;
+        margin-left:10px;
+        margin-top:10px;
+        border:5px solid powderblue;
+        font-size:89px;
+        float:left;
+        
+      } 
+      
+         
+      
+      
+    
+    </style> 
+ </head> 
+ <body> 
+  <h1> Calculator </h1> 
+  <div id="d1"> 
+   <div id="d2"> 
+    <div> 
+     <input class="dis" type="text" name="display" id="display" disabled> 
+    </div> 
+   </div> 
+   <div id="d3"> 
+    <!-- <button class="Ckey1">1</button> --> 
+    <button class="Ckey1" name="one" value="1" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '1'">1</button> 
+    <input type="button" class="Ckey1" name="two" value="2" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '2'"> 
+    <input type="button" class="Ckey1" name="three" value="3" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '3'"> 
+    <input type="button" class="Ckey1" name="four" value="4" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '4'"> 
+    <input type="button" class="Ckey1" name="five" value="5" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '5'"> 
+    <input type="button" class="Ckey1" name="six" value="6" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '6'"> 
+    <input type="button" class="Ckey1" name="seven" value="7" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '7'"> 
+    <input type="button" class="Ckey1" name="eight" value="8" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '8'"> 
+    <input type="button" class="Ckey1" name="nine" value="9" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '9'"> 
+    <input type="button" class="Ckey1" id="clear" name="clear" value="c" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value = ''"> 
+    <input type="button" class="Ckey1" name="zero" value="0" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '0'"> 
+    <input type="button" class="Ckey1" name="doit" value="=" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value = eval(display.value)"> 
+   </div> 
+   <div id="d4"> 
+    <input type="button" class="Ckey1" id="operator" name="plus" value="+" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '+'"> 
+    <input type="button" class="Ckey1" id="operator" name="minus" value="-" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '-'"> 
+    <input type="button" class="Ckey1" id="operator" name="multiplication" value="*" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '*'"> 
+    <input type="button" class="Ckey1" id="operator" name="division" value="/" onfocus="onfocusFunction(this)" onblur="onblurFunction(this)" onclick="display.value += '/'"> 
+   </div> 
+  </div> 
+  <script>
+    function onfocusFunction(element){
+      element.style.background = "lime";  
+    }  
+    
+    function onblurFunction(element){
+      element.style.background = "";
+    }
+  </script> 
+ 
+</body></html>
